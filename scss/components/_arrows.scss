@@ -1,0 +1,32 @@
+/* nextPrevArrow section */
+
+.nextPrevArrow {
+	position: absolute;
+	top: 80%;
+	right: 52%;
+	z-index: 100;
+	width: 300px;
+	max-width: 30%;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.nextPrevArrow button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--main-bg-color);
+	border: none;
+	color: #fff;
+	font-family: monospace;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.nextPrevArrow .prev:hover,
+.nextPrevArrow .next:hover {
+	background-color: var(--button-hover-color);
+	color: #fff;
+}
