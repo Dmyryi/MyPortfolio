@@ -5,13 +5,14 @@
 	--button-hover-color: #2196f3;
 	--main-color: #80af81;
 	--text-color: #000000;
-	--second-bg-color: #ecffe6;
+	--second-bg-color: #333;
 	--bg-color: #ffffff;
 }
 
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
+	color: #ffffff;
 }
 
 html::-webkit-scrollbar {

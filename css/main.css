@@ -4,13 +4,14 @@
   --button-hover-color: #2196f3;
   --main-color: #80af81;
   --text-color: #000000;
-  --second-bg-color: #ecffe6;
+  --second-bg-color: #333;
   --bg-color: #ffffff;
 }
 
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  color: #ffffff;
 }
 
 html::-webkit-scrollbar {
@@ -71,6 +72,40 @@ header nav a:focus {
   border-radius: 2px;
 }
 
+/* Header section */
+.header {
+  width: 1140px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.header nav a {
+  color: #d0ddc4;
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.header nav a.active,
+.header nav a:hover,
+.header nav a:focus {
+  background: var(--main-color);
+  border-radius: 2px;
+}
+
 /* Slider section */
 .slider {
   width: 100vw;
@@ -124,6 +159,7 @@ header nav a:focus {
   font-size: 14px;
 }
 
+/* Existing CSS */
 .slider .list .item .content .button {
   margin-top: 20px;
 }
@@ -141,11 +177,91 @@ header nav a:focus {
   letter-spacing: 2px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Ensure content is aligned correctly */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Center align icon with text */
 }
 
 .slider .list .item .content .button button:hover {
   background-color: var(--main-bg-color);
   color: #fff;
+}
+
+/* Additional CSS for the icon */
+.slider .list .item .content .button button i {
+  margin-left: 8px; /* Space between text and icon */
+  font-size: 14px; /* Adjust icon size */
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s; /* Smooth transition for hover effect */
+}
+
+.slider .list .item .content .button button:hover i {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px); /* Move icon slightly to the right on hover */
+}
+
+/* Existing CSS */
+.slider .list .item .content .button {
+  margin-top: 20px;
+}
+
+.slider .list .item .content .button button {
+  border: none;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid;
+  color: #eee;
+  padding: 7px 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 2px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Ensure content is aligned correctly */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Center align icon with text */
+}
+
+.slider .list .item .content .button button:hover,
+.slider .list .item .content .button button:focus {
+  background-color: var(--main-bg-color);
+  color: #fff;
+  -webkit-transform: scale(1.1) translateY(-5px);
+          transform: scale(1.1) translateY(-5px);
+  background: var(--main-bg-color);
+  -webkit-box-shadow: 0 0 25px var(--main-bg-color);
+          box-shadow: 0 0 25px var(--main-bg-color);
+}
+
+.button-svg {
+  width: 10px;
+  height: 10px;
+  fill: #ffffff;
+}
+
+/* Additional CSS for the icon */
+.slider .list .item .content .button button svg {
+  font-size: 14px;
+  /* Adjust icon size */
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  /* Smooth transition for hover effect */
+}
+
+.slider .list .item .content .button button:hover svg {
+  -webkit-transform: translate(2px, -2px);
+          transform: translate(2px, -2px); /* Move icon slightly up-right on hover */
 }
 
 /* Thubnail section */
@@ -416,6 +532,10 @@ header nav a:focus {
     font-size: 30px;
   }
 }
+.body {
+  background: url("../../img/ESTRADA.jpg") no-repeat center center fixed;
+}
+
 section {
   min-height: 100vh;
   -webkit-box-pack: center;
@@ -550,7 +670,7 @@ section {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   background-color: var(--main-color);
-  color: var(--text-color);
+  color: #fff;
   -webkit-box-shadow: 0 0 25px var(--main-color);
           box-shadow: 0 0 25px var(--main-color);
 }
@@ -565,62 +685,6 @@ section {
   position: relative;
 }
 
-.typing-text span::before {
-  content: "Frontend Developer";
-  color: var(--main-color);
-  -webkit-animation: words 20s infinite;
-          animation: words 20s infinite;
-}
-
-.typing-text span::after {
-  content: "";
-  background: var(--bg-color);
-  position: absolute;
-  width: calc(100% + 8px);
-  height: 100%;
-  border-left: 3px solid var(--bg-color);
-  right: -8;
-  -webkit-animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-          animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
-
-@-webkit-keyframes cursor {
-  to {
-    border-left: 3px solid var(--main-color);
-  }
-}
-
-@keyframes cursor {
-  to {
-    border-left: 3px solid var(--main-color);
-  }
-}
-@-webkit-keyframes words {
-  0%, 100% {
-    content: "Frontend Developer";
-  }
-}
-@keyframes words {
-  0%, 100% {
-    content: "Frontend Developer";
-  }
-}
-@-webkit-keyframes typing {
-  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
-    width: 0;
-  }
-  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
-    width: calc(100% + 8px);
-  }
-}
-@keyframes typing {
-  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
-    width: 0;
-  }
-  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
-    width: calc(100% + 8px);
-  }
-}
 @media (max-width: 1000px) {
   .home {
     gap: 4rem;

@@ -18,8 +18,16 @@ prevBtn.onclick = function () {
 	moveSlider('prev')
 }
 
+nextBtn.scroll = function () {
+	moveSlider('next')
+}
+prevBtn.scroll = function () {
+	moveSlider('prev')
+}
+
 changeColorPalette(sliderItems[0])
 
+// Function to handle slider movement
 function moveSlider(direction) {
 	sliderItems = sliderList.querySelectorAll('.list .item')
 	thumbnailItems = thumbnail.querySelectorAll('.thumbnail .item')
@@ -51,6 +59,7 @@ function moveSlider(direction) {
 	)
 }
 
+// Function to change color palette
 function changeColorPalette(currentSlide) {
 	let slideType = currentSlide
 		.querySelector('.content .type')
@@ -77,3 +86,5 @@ function changeColorPalette(currentSlide) {
 			break
 	}
 }
+
+// Add wheel event listener for scrolling

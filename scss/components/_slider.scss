@@ -49,6 +49,7 @@
 	font-size: 14px;
 }
 
+/* Existing CSS */
 .slider .list .item .content .button {
 	margin-top: 20px;
 }
@@ -65,9 +66,73 @@
 	cursor: pointer;
 	letter-spacing: 2px;
 	transition: 0.4s;
+	display: flex; /* Ensure content is aligned correctly */
+	align-items: center; /* Center align icon with text */
 }
 
 .slider .list .item .content .button button:hover {
 	background-color: var(--main-bg-color);
 	color: #fff;
+}
+
+/* Additional CSS for the icon */
+.slider .list .item .content .button button i {
+	margin-left: 8px; /* Space between text and icon */
+	font-size: 14px; /* Adjust icon size */
+	transition: transform 0.4s; /* Smooth transition for hover effect */
+}
+
+.slider .list .item .content .button button:hover i {
+	transform: translateX(5px); /* Move icon slightly to the right on hover */
+}
+/* Existing CSS */
+.slider .list .item .content .button {
+	margin-top: 20px;
+}
+
+.slider .list .item .content .button button {
+	border: none;
+	background-color: transparent;
+	border-radius: 20px;
+	border: 1px solid;
+	color: #eee;
+	padding: 7px 15px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	cursor: pointer;
+	letter-spacing: 2px;
+	transition: 0.4s;
+	display: flex; /* Ensure content is aligned correctly */
+	align-items: center; /* Center align icon with text */
+}
+
+.slider .list .item .content .button button:hover,
+.slider .list .item .content .button button:focus {
+	background-color: var(--main-bg-color);
+	color: #fff;
+
+	transform: scale(1.1) translateY(-5px);
+	background: var(--main-bg-color);
+	box-shadow: 0 0 25px var(--main-bg-color);
+}
+
+.button-svg {
+	width: 10px;
+	height: 10px;
+	fill: #ffffff;
+}
+
+/* Additional CSS for the icon */
+.slider .list .item .content .button button svg {
+	// margin-left: 2px; /* Space between text and icon */
+
+	font-size: 14px;
+
+	/* Adjust icon size */
+	transition: transform 0.4s;
+	/* Smooth transition for hover effect */
+}
+
+.slider .list .item .content .button button:hover svg {
+	transform: translate(2px, -2px); /* Move icon slightly up-right on hover */
 }

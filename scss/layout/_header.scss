@@ -1,5 +1,7 @@
 /* Header section */
 header {
+	// position: absolute;
+
 	width: 1140px;
 	max-width: 80%;
 	margin: auto;
@@ -24,5 +26,36 @@ header nav a.active,
 header nav a:hover,
 header nav a:focus {
 	background: var(--main-bg-color);
+	border-radius: 2px;
+}
+
+/* Header section */
+.header {
+	// position: absolute;
+
+	width: 1140px;
+	max-width: 80%;
+	margin: auto;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 100;
+}
+
+.header nav a {
+	color: #d0ddc4;
+	margin-right: 5px;
+	padding: 5px 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	transition: 0.2s;
+	font-weight: 500;
+}
+
+.header nav a.active,
+.header nav a:hover,
+.header nav a:focus {
+	background: var(--main-color);
 	border-radius: 2px;
 }
