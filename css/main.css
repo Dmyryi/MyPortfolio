@@ -533,7 +533,7 @@ header nav a:focus {
   }
 }
 .body {
-  background: url("../../img/ESTRADA.jpg") no-repeat center center fixed;
+  background-image: url("../../img/ESTRADA.jpg") no-repeat center center fixed;
 }
 
 section {
