@@ -21,7 +21,9 @@ header nav a {
 	transition: 0.2s;
 	font-weight: 500;
 }
-
+header nav a {
+	transition: background 0.4s ease, border-radius 0.4s ease;
+}
 header nav a.active,
 header nav a:hover,
 header nav a:focus {
@@ -51,6 +53,10 @@ header nav a:focus {
 	font-size: 12px;
 	transition: 0.2s;
 	font-weight: 500;
+}
+
+.header nav a {
+	transition: background 0.4s ease, border-radius 0.4s ease;
 }
 
 .header nav a.active,

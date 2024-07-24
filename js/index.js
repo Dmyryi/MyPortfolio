@@ -81,6 +81,14 @@ function changeColorPalette(currentSlide) {
 			root.style.setProperty('--main-bg-color', '#4caf50')
 			root.style.setProperty('--button-hover-color', '#388e3c')
 			break
+		case 'milinal':
+			root.style.setProperty('--main-bg-color', '#D4BDAC')
+			root.style.setProperty('--button-hover-color', '#D4BDAC')
+			break
+		case 'nuot':
+			root.style.setProperty('--main-bg-color', '#E3A5C7')
+			root.style.setProperty('--button-hover-color', '#E3A5C7')
+			break
 		default:
 			console.warn('Unknown slide type:', slideType)
 			break

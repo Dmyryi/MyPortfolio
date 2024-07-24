@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 :root {
   --main-bg-color: #2196f3;
   --button-hover-color: #2196f3;
@@ -23,7 +22,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   border: none;
   outline: none;
@@ -49,8 +48,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   z-index: 100;
 }
@@ -64,6 +63,11 @@ header nav a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   font-weight: 500;
+}
+
+header nav a {
+  -webkit-transition: background 0.4s ease, border-radius 0.4s ease;
+  transition: background 0.4s ease, border-radius 0.4s ease;
 }
 
 header nav a.active,
@@ -83,8 +87,8 @@ header nav a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   z-index: 100;
 }
@@ -98,6 +102,11 @@ header nav a:focus {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   font-weight: 500;
+}
+
+.header nav a {
+  -webkit-transition: background 0.4s ease, border-radius 0.4s ease;
+  transition: background 0.4s ease, border-radius 0.4s ease;
 }
 
 .header nav a.active,
@@ -127,7 +136,7 @@ header nav a:focus {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .slider .list .item .content {
@@ -137,10 +146,10 @@ header nav a:focus {
   max-width: 80%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   padding-right: 30%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   color: #fff;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2666666667);
 }
@@ -180,12 +189,10 @@ header nav a:focus {
   transition: 0.4s;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  /* Ensure content is aligned correctly */
+  display: flex; /* Ensure content is aligned correctly */
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  /* Center align icon with text */
+      -ms-flex-align: center;
+          align-items: center; /* Center align icon with text */
 }
 
 .slider .list .item .content .button button:hover {
@@ -195,21 +202,17 @@ header nav a:focus {
 
 /* Additional CSS for the icon */
 .slider .list .item .content .button button i {
-  margin-left: 8px;
-  /* Space between text and icon */
-  font-size: 14px;
-  /* Adjust icon size */
+  margin-left: 8px; /* Space between text and icon */
+  font-size: 14px; /* Adjust icon size */
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
-  /* Smooth transition for hover effect */
+  transition: transform 0.4s, -webkit-transform 0.4s; /* Smooth transition for hover effect */
 }
 
 .slider .list .item .content .button button:hover i {
   -webkit-transform: translateX(5px);
-  transform: translateX(5px);
-  /* Move icon slightly to the right on hover */
+          transform: translateX(5px); /* Move icon slightly to the right on hover */
 }
 
 /* Existing CSS */
@@ -232,12 +235,10 @@ header nav a:focus {
   transition: 0.4s;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  /* Ensure content is aligned correctly */
+  display: flex; /* Ensure content is aligned correctly */
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  /* Center align icon with text */
+      -ms-flex-align: center;
+          align-items: center; /* Center align icon with text */
 }
 
 .slider .list .item .content .button button:hover,
@@ -245,10 +246,10 @@ header nav a:focus {
   background-color: var(--main-bg-color);
   color: #fff;
   -webkit-transform: scale(1.1) translateY(-5px);
-  transform: scale(1.1) translateY(-5px);
+          transform: scale(1.1) translateY(-5px);
   background: var(--main-bg-color);
   -webkit-box-shadow: 0 0 25px var(--main-bg-color);
-  box-shadow: 0 0 25px var(--main-bg-color);
+          box-shadow: 0 0 25px var(--main-bg-color);
 }
 
 .button-svg {
@@ -270,8 +271,7 @@ header nav a:focus {
 
 .slider .list .item .content .button button:hover svg {
   -webkit-transform: translate(2px, -2px);
-  transform: translate(2px, -2px);
-  /* Move icon slightly up-right on hover */
+          transform: translate(2px, -2px); /* Move icon slightly up-right on hover */
 }
 
 /* Thubnail section */
@@ -293,7 +293,7 @@ header nav a:focus {
   width: 150px;
   height: 220px;
   -ms-flex-negative: 0;
-  flex-shrink: 0;
+      flex-shrink: 0;
   position: relative;
 }
 
@@ -301,10 +301,10 @@ header nav a:focus {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
   -webkit-box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
-  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
 }
 
 /* nextPrevArrow section */
@@ -320,8 +320,8 @@ header nav a:focus {
   display: flex;
   gap: 10px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nextPrevArrow button {
@@ -340,8 +340,13 @@ header nav a:focus {
 
 .nextPrevArrow .prev:hover,
 .nextPrevArrow .next:hover {
-  background-color: var(--button-hover-color);
+  background-color: var(--main-bg-color);
   color: #fff;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background: var(--main-bg-color);
+  -webkit-box-shadow: 0 0 25px var(--main-bg-color);
+          box-shadow: 0 0 25px var(--main-bg-color);
 }
 
 /* Animation part */
@@ -354,20 +359,20 @@ header nav a:focus {
 .slider .list .item:nth-child(1) .content .description,
 .slider .list .item:nth-child(1) .content .button {
   -webkit-transform: translateY(50px);
-  transform: translateY(50px);
+          transform: translateY(50px);
   -webkit-filter: blur(20px);
-  filter: blur(20px);
+          filter: blur(20px);
   opacity: 0;
   -webkit-animation: showContent 0.5s 1s linear 1 forwards;
-  animation: showContent 0.5s 1s linear 1 forwards;
+          animation: showContent 0.5s 1s linear 1 forwards;
 }
 
 @-webkit-keyframes showContent {
   to {
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
     -webkit-filter: blur(0px);
-    filter: blur(0px);
+            filter: blur(0px);
     opacity: 1;
   }
 }
@@ -375,26 +380,25 @@ header nav a:focus {
 @keyframes showContent {
   to {
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
     -webkit-filter: blur(0px);
-    filter: blur(0px);
+            filter: blur(0px);
     opacity: 1;
   }
 }
-
 .slider .list .item:nth-child(1) .content .type {
   -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .slider .list .item:nth-child(1) .content .description {
   -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .slider .list .item:nth-child(1) .content .button {
   -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 /* Animation for next button click */
@@ -406,7 +410,7 @@ header nav a:focus {
   left: 50%;
   border-radius: 30px;
   -webkit-animation: showImage 0.5s linear 1 forwards;
-  animation: showImage 0.5s linear 1 forwards;
+          animation: showImage 0.5s linear 1 forwards;
 }
 
 @-webkit-keyframes showImage {
@@ -428,11 +432,10 @@ header nav a:focus {
     border-radius: 0px;
   }
 }
-
 .slider.next .thumbnail .item:nth-last-child(1) {
   overflow: hidden;
   -webkit-animation: showThumbnail 0.5s linear 1 forwards;
-  animation: showThumbnail 0.5s linear 1 forwards;
+          animation: showThumbnail 0.5s linear 1 forwards;
 }
 
 .slider.prev .list .item img {
@@ -452,26 +455,24 @@ header nav a:focus {
     opacity: 0;
   }
 }
-
 .slider.next .thumbnail {
   -webkit-animation: effectNext 0.5s linear 1 forwards;
-  animation: effectNext 0.5s linear 1 forwards;
+          animation: effectNext 0.5s linear 1 forwards;
 }
 
 @-webkit-keyframes effectNext {
   from {
     -webkit-transform: translateX(150px);
-    transform: translateX(150px);
+            transform: translateX(150px);
   }
 }
 
 @keyframes effectNext {
   from {
     -webkit-transform: translateX(150px);
-    transform: translateX(150px);
+            transform: translateX(150px);
   }
 }
-
 /* Animation for prev button click */
 .slider.prev .list .item:nth-child(2) {
   z-index: 2;
@@ -482,7 +483,7 @@ header nav a:focus {
   bottom: 0;
   left: 0;
   -webkit-animation: outFrame 0.5s linear 1 forwards;
-  animation: outFrame 0.5s linear 1 forwards;
+          animation: outFrame 0.5s linear 1 forwards;
 }
 
 @-webkit-keyframes outFrames {
@@ -504,12 +505,11 @@ header nav a:focus {
     border-radius: 20px;
   }
 }
-
 .slider.prev .thumbnail .item:nth-child(1) {
   overflow: hidden;
   opacity: 0;
   -webkit-animation: showThumbnail 0.5s linear 1 forwards;
-  animation: showThumbnail 0.5s linear 1 forwards;
+          animation: showThumbnail 0.5s linear 1 forwards;
 }
 
 .slider.prev .list .item:nth-child(1) .content .title,
@@ -517,15 +517,15 @@ header nav a:focus {
 .slider.prev .list .item:nth-child(1) .content .description,
 .slider.prev .list .item:nth-child(1) .content .button {
   -webkit-animation: contentOut 0.5s 1s linear 1 forwards;
-  animation: contentOut 0.5s 1s linear 1 forwards;
+          animation: contentOut 0.5s 1s linear 1 forwards;
 }
 
 @-webkit-keyframes contentOut {
   to {
     -webkit-transform: translateY(-150px);
-    transform: translateY(-150px);
+            transform: translateY(-150px);
     -webkit-filter: blur(20px);
-    filter: blur(20px);
+            filter: blur(20px);
     opacity: 0;
   }
 }
@@ -533,23 +533,20 @@ header nav a:focus {
 @keyframes contentOut {
   to {
     -webkit-transform: translateY(-150px);
-    transform: translateY(-150px);
+            transform: translateY(-150px);
     -webkit-filter: blur(20px);
-    filter: blur(20px);
+            filter: blur(20px);
     opacity: 0;
   }
 }
-
 @media screen and (max-width: 678px) {
   .slider .list .item .content {
     padding-right: 0;
   }
-
   .slider .list .item .content .type {
     font-size: 30px;
   }
 }
-
 .body {
   background-image: url("../img/ESTRADA.jpg");
   background-repeat: no-repeat;
@@ -560,11 +557,11 @@ header nav a:focus {
 section {
   min-height: 100vh;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home {
@@ -572,11 +569,11 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 4rem;
 }
 
@@ -602,18 +599,18 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home-img img {
   width: 32vw;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 25px var(--main-color);
-  box-shadow: 0 0 25px var(--main-color);
+          box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s, -webkit-filter 0.3s;
   transition: -webkit-transform 0.3s, -webkit-filter 0.3s;
@@ -623,9 +620,9 @@ section {
 
 .home-img img:hover {
   -webkit-transform: scale(1.01);
-  transform: scale(1.01);
+          transform: scale(1.01);
   -webkit-filter: drop-shadow(0 0 25px var(--main-color));
-  filter: drop-shadow(0 0 25px var(--main-color));
+          filter: drop-shadow(0 0 25px var(--main-color));
 }
 
 .home-content p {
@@ -647,11 +644,11 @@ section {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 4rem;
   height: 4rem;
   background: transparent;
@@ -666,10 +663,10 @@ section {
 .social-icon a:hover {
   color: white;
   -webkit-transform: scale(1.3) translateY(-5px);
-  transform: scale(1.3) translateY(-5px);
+          transform: scale(1.3) translateY(-5px);
   background: var(--main-color);
   -webkit-box-shadow: 0 0 25px var(--main-color);
-  box-shadow: 0 0 25px var(--main-color);
+          box-shadow: 0 0 25px var(--main-color);
 }
 
 .btn {
@@ -689,11 +686,11 @@ section {
 
 .btn:hover {
   -webkit-transform: scale(1.03);
-  transform: scale(1.03);
+          transform: scale(1.03);
   background-color: var(--main-color);
   color: #fff;
   -webkit-box-shadow: 0 0 25px var(--main-color);
-  box-shadow: 0 0 25px var(--main-color);
+          box-shadow: 0 0 25px var(--main-color);
 }
 
 .typing-text {
@@ -711,43 +708,38 @@ section {
     gap: 4rem;
   }
 }
-
 @media (max-width: 995px) {
   .home {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 5rem 4rem;
   }
-
   .home .home-content h3 {
     font-size: 2.5rem;
   }
-
   .home-content h1 {
     font-size: 5rem;
   }
-
   .home-img img {
     width: 70vw;
     margin-top: 4rem;
   }
 }
-
 .radial-bars {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .radial-bars .radial-bar {
@@ -762,7 +754,7 @@ section {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(-90deg);
-  transform: translate(-50%, -50%) rotate(-90deg);
+          transform: translate(-50%, -50%) rotate(-90deg);
   width: 120px;
   height: 160px;
 }
@@ -775,7 +767,7 @@ section {
   stroke-dashoffset: 502;
   stroke-linecap: round;
   -webkit-animation: animate-bar 1s linear forwards;
-  animation: animate-bar 1s linear forwards;
+          animation: animate-bar 1s linear forwards;
 }
 
 @-webkit-keyframes animate-bar {
@@ -789,7 +781,6 @@ section {
     stroke-dashoffset: -1;
   }
 }
-
 .path {
   stroke-width: 10;
   stroke: #0ef;
@@ -801,22 +792,22 @@ section {
 
 .path-1 {
   -webkit-animation: animate-path1 1s 1s linear forwards;
-  animation: animate-path1 1s 1s linear forwards;
+          animation: animate-path1 1s 1s linear forwards;
 }
 
 .path-1 {
   -webkit-animation: animate-path1 1s 1s linear forwards;
-  animation: animate-path1 1s 1s linear forwards;
+          animation: animate-path1 1s 1s linear forwards;
 }
 
 .path-3 {
   -webkit-animation: animate-path1 1s 1s linear forwards;
-  animation: animate-path1 1s 1s linear forwards;
+          animation: animate-path1 1s 1s linear forwards;
 }
 
 .path-4 {
   -webkit-animation: animate-path1 1s 1s linear forwards;
-  animation: animate-path1 1s 1s linear forwards;
+          animation: animate-path1 1s 1s linear forwards;
 }
 
 @-webkit-keyframes animate-path1 {
@@ -830,19 +821,16 @@ section {
     stroke-dashoffset: 50;
   }
 }
-
 @keyframes animate-path1 {
   100% {
     stroke-dashoffset: 175;
   }
 }
-
 @keyframes animate-path1 {
   100% {
     stroke-dashoffset: 225;
   }
 }
-
 @keyframes animate-path1 {
   100% {
     stroke-dashoffset: 125;

@@ -1,5 +1,8 @@
 .body {
-	background-image: url('../img/ESTRADA.jpg') no-repeat center center fixed;
+	background-image: url('../img/ESTRADA.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 }
 
 section {
