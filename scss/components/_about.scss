@@ -28,7 +28,10 @@ section {
 }
 
 .span {
-	color: var(--main-color);
+	color: #fff;
+	// box-shadow: 0 0 25px #fff;
+	text-shadow: 0 0 1px var(--main-color), 0 0 1px var(--main-color),
+		0 0 10px var(--main-color), 0 0 5px var(--main-color);
 }
 
 .home-content h3 {
@@ -61,6 +64,7 @@ section {
 	font-size: 1.8rem;
 	font-weight: 500;
 	max-width: 600px;
+	text-align: justify;
 }
 
 .social-icon {
@@ -219,4 +223,122 @@ section {
 	100% {
 		stroke-dashoffset: 125;
 	}
+}
+
+@media (max-width: 1000px) {
+	.home {
+		gap: 4rem;
+	}
+}
+
+@media (max-width: 995px) {
+	.home {
+		flex-direction: column;
+		margin: 5rem 4rem;
+	}
+	.home .home-content h3 {
+		font-size: 2.5rem;
+	}
+	.home-content h1 {
+		font-size: 5rem;
+	}
+	.home-img img {
+		width: 70vw;
+		margin-top: 4rem;
+	}
+}
+
+.services {
+	background: var(--second-bg-color);
+}
+
+.services-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	gap: 2.5rem;
+}
+
+.service-box {
+	background-color: var(--main-color);
+	height: 400px;
+	border-radius: 3rem;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.service-box:hover {
+	background: white;
+	color: var(--main-color);
+	transform: scale(1.03);
+	border: 2px solid var(--main-color);
+}
+.service-box .service-info {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	max-height: 200px;
+	justify-content: center;
+	align-items: baseline;
+	padding: 5em;
+}
+
+.service-info h4 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.service-info p {
+	font-size: 1.6rem;
+	font-weight: 400;
+	max-height: 100px;
+	margin: auto;
+}
+@media (max-width: 991px) {
+	section {
+		padding: 10rem 3% 2rem;
+	}
+	.services {
+		padding-bottom: 3rem;
+	}
+}
+
+@media (max-width: 895px) {
+	.services h2 {
+		margin-bottom: 3rem;
+	}
+
+	.services-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.footer-social-icon {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	gap: 2rem;
+}
+
+.footer-social-icon a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	background: transparent;
+	border: 0.2rem solid var(--main-color);
+	font-size: 2rem;
+	border-radius: 50%;
+	color: var(--main-color);
+	transition: 0.3s ease;
+}
+
+.footer-social-icon a:hover {
+	color: white;
+	transform: scale(1.3) translateY(-5px);
+	background: var(--main-color);
+	box-shadow: 0 0 25px var(--main-color);
 }
